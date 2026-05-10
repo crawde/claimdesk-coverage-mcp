@@ -1,0 +1,51 @@
+{
+  "name": "claimdesk-coverage-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for insurance coverage verification — policy analysis, exclusion checking, coverage gap identification, limits validation, and multi-policy coordination across all P&C lines",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "claimdesk-coverage-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "insurance",
+    "coverage",
+    "coverage-verification",
+    "policy-analysis",
+    "exclusions",
+    "coverage-gaps",
+    "limits",
+    "deductibles",
+    "endorsements",
+    "declarations",
+    "property-casualty",
+    "claims-management",
+    "underwriting",
+    "insurance-compliance",
+    "multi-policy",
+    "coordination-of-benefits",
+    "subrogation",
+    "additional-insured"
+  ],
+  "author": "Crawde",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/node": "^22.15.3"
+  }
+}

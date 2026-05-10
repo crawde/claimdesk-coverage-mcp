@@ -1,0 +1,44 @@
+{
+  "name": "claimdesk-coverage-mcp",
+  "display_name": "ClaimDesk Coverage — Policy Verification & Gap Analysis",
+  "description": "Insurance coverage verification: analyze policies for applicable coverage, check exclusions, identify gaps, validate limits and deductibles, coordinate multi-policy stacking, and verify additional insured status.",
+  "icon_url": "https://claimdeskai.com/icon.png",
+  "repository": "https://github.com/crawde/claimdesk-coverage-mcp",
+  "homepage": "https://claimdeskai.com",
+  "author": "Crawde",
+  "license": "MIT",
+  "categories": ["insurance", "compliance", "analytics"],
+  "tags": ["coverage", "policy-analysis", "exclusions", "coverage-gaps", "limits", "deductibles", "endorsements", "additional-insured", "subrogation", "coordination-of-benefits", "multi-policy", "property-casualty", "underwriting"],
+  "installations": {
+    "npm": {
+      "command": "npx",
+      "args": ["-y", "claimdesk-coverage-mcp"]
+    }
+  },
+  "tools": [
+    {
+      "name": "verify_coverage",
+      "description": "Analyze whether a claim is covered under a given policy — checks insuring agreements, exclusions, conditions, and endorsements"
+    },
+    {
+      "name": "check_exclusions",
+      "description": "Identify all applicable exclusions for a claim scenario across standard ISO and manuscript forms"
+    },
+    {
+      "name": "analyze_limits",
+      "description": "Calculate available limits after prior claims, aggregate erosion, deductible application, and SIR satisfaction"
+    },
+    {
+      "name": "find_coverage_gaps",
+      "description": "Identify uninsured or underinsured exposures by comparing a risk profile against policy portfolio coverage"
+    },
+    {
+      "name": "coordinate_policies",
+      "description": "Determine priority and contribution across multiple policies — primary, excess, umbrella, and other-insurance clauses"
+    },
+    {
+      "name": "verify_additional_insured",
+      "description": "Check additional insured status, endorsement types, and coverage scope for named vs blanket AI endorsements"
+    }
+  ]
+}
